@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/weddings']" routerLinkActive="router-link-active">Weddings</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/365']" routerLinkActive="router-link-active">365</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/1000']" routerLinkActive="router-link-active">1000 Days P.O.C</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/gallery']" routerLinkActive="router-link-active">Gallery</a>
+      </li>
+    </ul>
+  </div>
+  <div class="mx-auto order-0">
+    <a class="navbar-brand mx-auto" [routerLink]="['']" routerLinkActive="router-link-active"><img src="/assets/ARp.png"
+        alt="Austin Rich"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/about']" routerLinkActive="router-link-active">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/reserve']" routerLinkActive="router-link-active">Reserve a date</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/services']" routerLinkActive="router-link-active">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/store']" routerLinkActive="router-link-active">Store</a>
+      </li>
+    </ul>
+  </div>
+</nav>
