@@ -7,6 +7,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -49,6 +50,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    NgbModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule, // for database
   ],

@@ -1,22 +1,55 @@
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css">
-</script>
-
 <section class="container">
   <div class="py-5 text-center">
     <img class="d-block mx-auto mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
     <h2>Reserve a Date</h2>
     <p class="lead">If you have an important date you would like for me to Photograph besure to lock in the date. </p>
-    <p>To lock a date, a non refundable payment of $100 (per day) is required. The deposite will count towards the final balance.</p>
+    <p>To lock a date, a non refundable payment of $100 (per day) is required. The deposite will count towards the
+      final balance.</p>
   </div>
 
+  <section class="row mb-5">
+    <div class="col">
+      <ngb-datepicker [displayMonths]="displayMonths" [navigation]="navigation" [showWeekNumbers]="showWeekNumbers"
+        [outsideDays]="outsideDays">
+      </ngb-datepicker>
+    </div>
 
-<label for="startDate">Start date
-  <input class="span2 col-md-2 form-control" id="startDate" name="startDate" type="text" placeholder="-Infinity">
-</label>
-<label for="startDate">End date
-<input class="span2 col-md-2 form-control" id="endDate" name="endDate" type="text" placeholder="+Infinity">
-</label>
+    <div class="col">
+      <h5>View Options</h5>
+      <div class="d-flex flex-wrap align-content-between p-2">
+        <select class="custom-select" [(ngModel)]="displayMonths">
+          <option [ngValue]="1">One month</option>
+          <option [ngValue]="2">Two months</option>
+          <option [ngValue]="3">Three months</option>
+        </select>
+
+        <select class="custom-select" [(ngModel)]="navigation">
+          <option value="none">Without navigation</option>
+          <option value="select">With select boxes</option>
+          <option value="arrows">Without select boxes</option>
+        </select>
+
+        <select class="custom-select" [(ngModel)]="showWeekNumbers">
+          <option [ngValue]="true">Week numbers</option>
+          <option [ngValue]="false">No week numbers</option>
+        </select>
+
+        <select class="custom-select" [(ngModel)]="outsideDays">
+          <option value="visible">Visible outside days</option>
+          <option value="hidden">Hidden outside days</option>
+          <option value="collapsed">Collapsed outside days</option>
+        </select>
+      </div>
+
+    </div>
+
+
+
+
+  </section>
+
+
+
   <h4 class="mb-3">Billing address</h4>
   <form class="needs-validation" novalidate>
     <div class="row">
