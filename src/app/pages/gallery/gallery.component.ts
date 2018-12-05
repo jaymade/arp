@@ -1,3 +1,4 @@
+import { ImageComponent } from './../../images/image/image.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

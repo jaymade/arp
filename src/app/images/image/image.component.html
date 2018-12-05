@@ -1,0 +1,33 @@
+<h2>{{title}}</h2>
+<div class="row my-5" *ngIf="imgOrientation == 'landscape'">
+
+  <div class="col-sm">
+    <img src="{{photo.src}}" class="img-fluid" alt="{{photo.name}}">
+  </div>
+
+  <div class="col-sm">
+<h4>{{photo.name}}</h4>
+    <p><strong>ID: </strong>{{photo.id}}</p>
+    <p><strong>Date: </strong>{{photo.addedDate}}</p>
+    <p><strong>Description: </strong>{{photo.description}}</p>
+    <p><strong>Project: </strong>{{photo.project}}</p>
+  </div>
+
+</div>
+<div class="row my-5" *ngIf="imgOrientation == 'portrait'">
+
+
+  <div class="col-sm">
+    <img src="{{photo.src}}" class="img-fluid" alt="{{photo.name}}">
+  </div>
+
+  <div class="col-sm">
+    <h4>Portrait</h4>
+    <p><strong>ID: </strong>{{photo.id}}</p>
+    <p><strong>Date: </strong>{{photo.addedDate}}</p>
+    <p><strong>Name: </strong>{{photo.name}}</p>
+    <p><strong>Description: </strong>{{photo.description}}</p>
+    <p><strong>Project: </strong>{{photo.project}}</p>
+  </div>
+
+</div>

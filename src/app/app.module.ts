@@ -26,6 +26,7 @@ import { Three65Component } from './pages/three65/three65.component';
 import { WeddingsComponent } from './pages/weddings/weddings.component';
 import { ImageListComponent } from './images/image-list/image-list.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ImageComponent } from './images/image/image.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     Three65Component,
     WeddingsComponent,
     ImageListComponent,
-    ContactComponent
+    ContactComponent,
+    ImageComponent
   ],
   imports: [
     BrowserModule,

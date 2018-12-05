@@ -1,7 +1,7 @@
 export class Image {
   id: string;
   src: string;
-  addedDate: Date;
+  addedDate: string;
   name: string;
   description: string;
   project: string;
