@@ -3,7 +3,7 @@
 
 <div class='row'>
   <div *ngFor='let orient of orients' class="inline pr-3">
-<input type="radio" name="orientsOfTheWeek" value="{{orient}}" (change)="radioChangeHandler($event)">
+<input type="radio" name="orient" value="{{orient}}" [(ngModel)]="imgOrientation" (change)="radioChangeHandler($event)">
     <em class="pl-1">{{orient}}</em>
   </div>
   <code>You selected: {{selectedOrient}}</code>

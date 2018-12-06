@@ -9,7 +9,7 @@ import { Image } from '../../models/image.model';
 export class ImageComponent implements OnInit {
   imgOrientation = 'landscape';
   title = 'photograph';
-  startOrient = 'landscape';
+  // startOrient = 'landscape';
   selectedOrient = '';
 
   orients: any = ['landscape', 'portrait'];
@@ -41,8 +41,10 @@ export class ImageComponent implements OnInit {
   radioChangeHandler(event: any) {
     this.selectedOrient = event.target.value;
     if (event.target.value === 'portrait') {
+      this.imgOrientation = 'portrait';
       this.photo = this.portrait;
     } else {
+      this.imgOrientation = 'lansdscape';
       this.photo = this.landscape;
     }
   }
