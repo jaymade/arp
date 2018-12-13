@@ -2,11 +2,17 @@
 
 $red: #ff0000;
 $green: #016312;
+$gray: rgb(85, 85, 85);
 
 .red {
   color: $red;
 }
+
 .price {
   color: $green;
   font-weight: 700;
+}
+
+.login {
+  background-color: $gray;
 }

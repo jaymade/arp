@@ -1,3 +1,4 @@
+import { AuthService } from './service/auth.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -27,6 +28,8 @@ import { WeddingsComponent } from './pages/weddings/weddings.component';
 import { ImageListComponent } from './images/image-list/image-list.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ImageComponent } from './images/image/image.component';
+import { LoginComponent } from './user/login/login.component';
+import { ProfileComponent } from './user/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,9 @@ import { ImageComponent } from './images/image/image.component';
     WeddingsComponent,
     ImageListComponent,
     ContactComponent,
-    ImageComponent
+    ImageComponent,
+    LoginComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +61,7 @@ import { ImageComponent } from './images/image/image.component';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule, // for database
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
